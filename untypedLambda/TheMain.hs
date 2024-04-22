@@ -10,8 +10,8 @@ main = do
      "\n\92usepackage[linguistics]{forest}" ++
      "\n\92begin{document}" ++
      "\n\92begin{forest}\n    ")
-  putStrLn "Write a term to evaluate:" -- extend to l-tms by asking for
-                                              -- a context.
+  putStrLn "Write a term to evaluate:" -- extended to terms with free variables 
+                                       -- by asking for a naming context
   tm <- getLine
   let parsed = fullParse tm
   prectx <- extendCtx []
