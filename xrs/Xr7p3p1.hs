@@ -1,6 +1,7 @@
 import Core
 
 -- Exercise 7.3.1: Implement evaluation of terms using big-step semantics.
+-- To work, it must be in the same folder as the Core module of the compiler.
 -- can it be written using _where_ constructs instead of _let_ bindings and _case_ expressions?
 
 bigstepEval :: NlTerm -> Maybe NlTerm 
