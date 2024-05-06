@@ -1,4 +1,4 @@
-module Core(Term(..), NlTerm(..), Context, ev1, eval, nmlOrd) where
+module Core(Term(..), NlTerm(..), Context, ev1, eval, nmlOrd, isval, tmSubsTop) where
 
 data Term =
     TmVar String
