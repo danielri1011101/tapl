@@ -14,11 +14,11 @@ bigstepEval (TmApp t1 t2)
                 in case (v1,v2) of (_,Nothing) -> Nothing
                                    (Nothing,_) -> Nothing
                                    (Just u1, Just u2) ->
-                                      bigstepEval (termSubstTop u2 u1)
+                                      bigstepEval (tmSubsTop u2 u1)
               ) = let v1 = bigstepEval t1
                       v2 = bigstepEval t2
                   in case (v1,v2) of (_,Nothing) -> Nothing
                                      (Nothing,_) -> Nothing
                                      (Just u1, Just u2) ->
-                                        Just (bigstepEval (termSubstTop u2 u1))
+                                        Just (bigstepEval (tmSubsTop u2 u1))
 bigstepEval _ = Nothing
