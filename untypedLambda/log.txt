@@ -2,7 +2,7 @@
 - Lexer tokenizes until it finds an exit char, which is anything
   outside of ['a'..'z', '0'..'9', '\'', '(', ')', '.', ' ', '\n', '\t',
               '\r'] (plus some details)
-- To make the parser, profe Callanan starts by ignoring parentheses.
+- To make the parser, Callanan starts by ignoring parentheses.
 
 22.03.24
 - Parser seems to work well
